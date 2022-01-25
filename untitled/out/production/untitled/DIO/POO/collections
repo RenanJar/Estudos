@@ -1,0 +1,63 @@
+
+
+instruções para utilizar o coleection.
+
+
+*List<TIPO> nomedavariavel = new ArrayList<Tipo>();
+
+----adicionar elementos-----
+
+nomedavariavel.add(elementopara adicionar);
+
+para adicionar elementos em lugares especificos,
+
+nomedavariavel.add(posição da lista, elemento para ser adicionado)
+
+----Localizar posição dentro da list----
+
+nomedavariavel.indexof(procurado)
+
+----substituição nas listas-----
+
+nomedavariavel.set(nomedavariavel.indexoff(substituido),substituição)
+
+---- monstrar atravez do indice o elemento -----
+
+nomedavariavel.get(elemento)
+
+---mostrar menor valor ----
+
+collections.min(nomedavariavellist))
+
+----mostrar maior valor ----
+
+collecrtions.max(nomedavariavellist))
+
+----soma dos valores ----
+
+iterator<TIPO> nomedavariavel = nomedavariavel.iterator();
+nomedavariavel.iterator();
+iterator.hasnext() ---- pergunta se na lista criada tem um proximo valor...
+
+----- numero de elementos da lista ----
+
+nomedavaraivel.size()
+
+
+----remover elementos da lista
+
+nomedavariavel.remove(posição, ou o elemento em si);
+
+---- saber se a lista esta vazia ---
+
+nomevariavel.isEmpty());
+
+retorna true se estiver vazia ou false se estiver sem itens
+
+
+------ para se usar o comparator, deve se criar uma classe implementando o Comparator
+o mesmo exige que vc o import da JAVA.UTIL
+logo apos iniciarlizar o compare passando dois parametros(que sao os itens contidos na lista)
+para exibição vc so precisa chamar o nome da classe.
+
+
