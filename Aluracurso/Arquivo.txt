@@ -1,0 +1,9 @@
+Padrão de Projeto
+Alexander descreveu um padrão como sendo um problema que se repete inúmeras vezes em um mesmo contexto e que contenha
+uma solução para resolver tal problema de modo que esta solução possa ser utilizada em diversas situações.
+O termo padrões de projeto ou Design Patterns, descreve soluções para problemas recorrentes no desenvolvimento
+ de sistemas de software orientados a objetos. O Factory é um destes padrões. Ele é baseado em uma interface para criar
+ objetos e deixar que suas subclasses decidam que classe instanciar. Deste modo, utilizasse o conceito de fábrica de
+ objetos quando um objeto é utilizado para a criação de outros objetos. Algo assim foi implementado no Framework
+ Hibernate para a criação de uma espécie de fábrica de sessões, ou seja, na criação de uma única SessionFactory
+ teríamos acesso a vários objetos do tipo Session.
