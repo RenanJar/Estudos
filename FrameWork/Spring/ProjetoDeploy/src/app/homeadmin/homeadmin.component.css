@@ -1,0 +1,62 @@
+.preco{
+    color: black !important;
+    font-size: 2rem;
+}
+.bkg{
+    background-blend-mode:darken ;
+    background:rgba(255, 255, 255, 0.922);
+   
+    background-size: cover;
+}
+
+.bg-cor{
+    background-color: rgb(255, 68, 31)!important;
+    font-size: 1.5rem;
+}
+.corbt{
+    background-color: rgb(255, 68, 31)!important;
+    color: white;
+    
+    
+}
+.centro{
+    align-items: center !important;
+    text-align-last: center !important;
+}
+.jumb{
+    background-image: url('https://imgur.com/hpk33p9.png');
+    background-color: rgba(29, 27, 27, 0.744);
+    background-blend-mode: multiply;
+    background-size: cover;
+    opacity: 1;  
+  }
+  .titulo{
+    color:#EAAB51;
+    font-size: 60px;
+    text-align-last: center !important;
+  }
+  .subtit{
+    color: #EAAB51;
+    text-align-last: center !important;
+  }
+
+.bgtema{
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+.fbold{
+    font-weight: bold!important;
+}
+
+.bkgcard{
+    color: rgb(0, 0, 0);
+
+    background: rgb(255, 255, 255);
+    
+
+}
+.hr{
+    background-color: #EAAB51;
+    opacity: 0.5;
+}

@@ -1,0 +1,119 @@
+<div>
+    
+    <div class="shadow" #topo style="height: 500px;">
+        <div class="d-flex justify-content-center pt-5">
+            <i class="bi bi-moon-stars-fill"></i>
+        </div>
+        <div class=" container d-flex justify-content-center mb-5 fs-3" style="margin-top: 100px;">
+            <label>
+                <p>
+                    <span class="fw-bold">Magic Consult</span> is a <span class="fw-bold">Fantastic</span> Magic: The Gathering automation card search
+                </p>
+            </label>
+        </div>
+
+        <div class="d-flex justify-content-center container" style="margin-top: 100px;"> 
+           
+            <a href="#letsGo" class="shadow btn btn-warning w-50 " style="height: 50px;">Lets go!</a>
+                
+        </div>
+        
+
+    </div>
+    
+        
+    <div class="container " id="letsGo">
+        <div class="d-flex flex-column mb-5" style="margin-top: 100px;">
+            <div class="d-flex justify-content-center mb-5 fs-4">
+                Select your favorite magic store :
+            </div>
+            <div class="row justify-content-md-center text-center mt-3">
+
+                <div class="col-md-auto mt-3">
+                    <button  id="flowstoreButton" class="shadow-lg btn btn-primary" [ngClass]="{'isClick':isClick}" (click)="selection($event)" type="button">
+                        <img src="https://www.lmcorp.com.br/arquivos/ecom/82238/images/logo2.svg" class="w-100 h-100">
+                    </button>
+                </div>
+                <div class="col-md-auto mt-3">
+                    <button disabled class="btn btn-lg shadow-lg" type="button" style="padding: 10px; background-color: #d4d4d4;width: 200px; height: 100px; border: none;">
+                        <img src="https://www.lmcorp.com.br/arquivos/ecom/32035/img/logo.png" class="w-100 img-fluid">
+                    </button>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center mt-5 fs-4">
+                Share your list of cards with us so we can help you research!
+            </div>
+    
+        </div>
+    
+        <div class="row">
+            <div class="col">
+                <div class="mb-3 d-flex justify-content-center">
+                    <textarea class="form-control shadow " (ngSubmit)="onSubmit()"[formControl]="formCardInput" id='listCardsSearch' placeholder="Enter your cards list at format:GRISLY SALVAGE; ARCANE SIGNET; NEYALI, SUNS' VANGUARD;  ..." style="width: 200px; height: 300px;" rows="3" ></textarea>
+                </div>
+            </div>
+
+        </div>
+       
+        <div class="d-flex justify-content-center mb-5 " style="margin-top: 50px;"> 
+            <button class="shadow btn btn-warning shadow w-50" data-bs-toggle="modal" (click)="onSubmit()" style="height: 50px;">Search !</button>
+        </div>
+
+        <div class="modal fade" id="modalCardList" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">CardList</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body d-flex justify-content-center" *ngIf="isLoading; else loaded">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden"></span> 
+                        </div>
+                    </div>
+
+                    <ng-template  class="modal-body d-flex flex-column" #loaded>
+                        <div class="row justify-content-md-center text-center mt-3">
+                            <div class="col-md-auto ">
+                                Cards Found
+                                <div>
+                                    <table class="table">
+                                        <tbody *ngFor="let cards of cardfound">
+                                          <tr class="text-success text-start">
+                                            <td>{{cards.name}}</td>
+                                            <td>{{cards.price}}</td>
+                                          </tr>
+                                        </tbody>
+                                    </table>   
+                                </div>
+                            </div>
+                            <div class="col-md-auto ">
+                                Cards Not Found
+                                <div>
+                                    <table class="table">
+                                        <tbody *ngFor="let cards of cardsNotFound">
+                                          <tr class="text-danger text-start">
+                                            <td>{{cards}}</td>
+                                          </tr>
+                                        </tbody>
+                                    </table>   
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+          
+
+    </div>
+    
+</div>

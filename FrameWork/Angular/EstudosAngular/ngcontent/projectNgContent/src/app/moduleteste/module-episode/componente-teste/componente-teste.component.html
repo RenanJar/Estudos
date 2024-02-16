@@ -1,0 +1,28 @@
+<div class="mt-2 container d-flex justify-content-center">
+  <button type="button" class="btn btn-success ms-2" (click)="getAllEpisodios()">Listar Episodios</button>
+  <button type="button" class="btn btn-success ms-2" routerLink="/charactersRoute">Listar Personagens</button>
+</div>
+<div class="container" *ngIf="listEpisodios.length >0; else noList">
+   <app-card *ngFor ="let episodio of listEpisodios; let i = index">
+
+    <div class="titulo">{{episodio.name}}</div>
+    
+    <div class="subtitulo text-success">Criado em: {{episodio.created | date:'shortDate'}}</div>
+
+    <div class="acordionDown">
+
+      <app-acordion [episode]="episodio"></app-acordion>
+      
+    </div>
+   </app-card>
+</div>
+<ng-template #noList>
+  <div class="container">
+    <div class="card mt-2 mx-auto bg-light text-success" style="width: 300px; height: 150px;">
+      <h5 class="text-center my-auto">Nenhum episodio selecionado</h5>
+    </div> 
+  </div>
+</ng-template>
+
+
+

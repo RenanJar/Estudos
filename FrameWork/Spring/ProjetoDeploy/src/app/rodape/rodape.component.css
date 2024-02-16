@@ -1,0 +1,56 @@
+#bgcor{
+    background-color: rgb(255, 68, 31) !important;
+}
+
+ul.social-network{
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+}
+
+.fa{
+    font-size: 35pt;
+    color: white;
+    padding: 10px;
+}
+
+.fa-cc-visa:hover{
+    color: rgb(0, 21, 212);
+}
+
+.fa-cc-mastercard:hover{
+    color: rgb(227, 243, 0);
+}
+
+.fa-cc-paypal:hover{
+    color: rgb(107, 147, 235);
+}
+
+.fa-barcode:hover{
+    color: rgb(48, 49, 53);
+}
+
+.fa-cutlery:hover{
+    color: rgb(255, 0, 34);
+}
+.fa-facebook-square:hover{
+    color: rgb(85, 85, 228);
+}
+.fa-instagram:hover{
+    color: #f32f74;
+}
+.fa-github-square:hover{
+    color: black;
+}
+.fa-linkedin-square:hover{
+    color: rgb(65, 65, 182);
+}
+.fw-bold:hover{
+    color: rgb(162, 255, 0);
+}
+

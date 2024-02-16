@@ -1,0 +1,88 @@
+.bg{
+    background-color: #fafafa;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    border: 0px;
+    border-top: 2px solid #ff441f;
+    background-color: #ffffff;
+}
+.margin{
+    margin-top: 60px;
+}
+
+.carouselExampleIndicators{
+    width: 200px !important;
+    height: 200px !important;
+    border: none;
+    
+}
+
+.botao{
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(white, #ff441f);
+    margin-right: 10px;
+    border: solid 2px #ff441f;
+    
+}
+
+
+
+
+
+.carrosel{
+    max-height:600px;
+    height: auto;
+    padding: -15;
+}
+
+.imgTam{
+    width: 80px;
+    height: 80px;
+}
+
+.botao:hover{
+    width: 155px;
+    height: 155px;
+}
+
+.valBol{
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    color: #3e3e3e;
+}
+
+.preco{
+    display: flex;
+    justify-content: end;
+    font-size: 2rem;
+    line-height: 1.25rem;
+    color: #3e3e3e;
+    margin-top: 10px;
+}
+
+.carousel .carousel-control-prev { visibility: hidden; }
+
+.carousel-control-next { visibility: hidden; }
+
+.bg-laranja{
+    font-size: 2rem;
+    color: #ff441f !important;
+}
+
+.fw{
+    font-weight: bold !important;
+}
+
+p.card-text{
+    display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-cor fixed-top" id="bgcor">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <img src="https://i.imgur.com/HJazY6P.png" alt="Logo" width="40px" height="40px" class="img-fluid">
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white fs-16 hoverCor pl-3" (click)="paraHome()">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white fs-16 hoverCor" href="#sobre" routerLink="/sobrenos">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white fs-16 hoverCor" href="#categoria" (click)="paraHome()">Categorias</a>
+      </li>
+
+      
+     
+      <li class="nav-item">
+        <a class="nav-link text-white fs-16 hoverCor" href="#conosco" routerLink="/contato">Fale conosco</a>
+      </li>
+
+    </ul>
+
+    <ul class="navbar-nav ml-auto d-flex align-items-center">
+      <li class="nav-item pl-3">
+
+        <a class="fa fa-cog m-0 font-weight-bold text-white fs-16 hoverCor pr-3" alt="admin" routerLink="/homeadmin"><i aria-hidden="true"></i></a>
+
+        <a class="fa fa-cart-plus m-0 font-weight-bold text-white fs-16 carrinho pr-3" routerLink="/carrinho"><i aria-hidden="true"></i></a>
+
+        <a class="m-0 font-weight-bold text-white fs-16 sairHover deco-sair" alt="sair" routerLink="/login"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+
+      </li>
+    </ul>
+
+  </div>
+</nav>

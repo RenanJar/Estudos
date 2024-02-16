@@ -1,0 +1,29 @@
+<div class="fundo">
+    <div class="jumbotron jumbotron-fluid jumb">
+        <div class="container  fw-bold mb-4">
+            <h1 class="font-weight-bolder titulo mt-5 mb-5">Atualizar Categorias</h1>
+
+        </div>
+    </div>
+    <hr class="hr">
+
+    <div class="container colortext caixa ">
+        <form>
+            <div class="form-group">
+                <label for="tipo">Tipo:</label>
+                <input type="text" name="tipo" class="form-control" id="tipo" [(ngModel)]="categoria.tipo">
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <input type="text" name="descricao" class="form-control" id="descricao" [(ngModel)]="categoria.descricao">
+            </div>
+            <div class="d-flex">
+                <button class="btn btn-danger mr-4 " routerLink="/homeadmin">Cancelar</button>
+                <button class="btn botao" (click)="atualizar()">Atualizar</button>
+            </div>
+        </form>
+        <div class="ml-50 d-flex">
+            <img src="https://imgur.com/YZDeTVw.png" width="400px" height="400px">
+        </div>
+    </div>
+</div>

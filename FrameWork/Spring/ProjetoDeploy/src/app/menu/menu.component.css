@@ -1,0 +1,52 @@
+.bg-cor{
+    background-color: #ff441f;
+    opacity: 1;
+}
+
+.logoCor{
+    color: white;
+}
+
+.nav-fixo{
+    position: fixed;
+    width: 100%;
+}
+
+.ul li{
+    color: white !important;
+}
+
+.fs-16{
+    font-size: 15pt;
+}
+
+.fs-16:hover{
+    font-size: 16pt;
+    
+}
+
+.hoverCor:hover{
+    color: #ffdc8a !important;
+    text-decoration: none; 
+}
+
+a{
+    cursor: pointer;
+}
+
+.deco-sair{
+    text-decoration: none;
+}
+
+.sairHover:hover{
+    color: red !important;
+}
+
+.fa-sign-out:hover{
+    color: red;
+}
+
+.carrinho:hover{
+    color: #5ef170 !important;
+    
+}

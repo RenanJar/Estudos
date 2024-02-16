@@ -1,0 +1,19 @@
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <div class="buttonDrop">
+          <button class="accordion-button" type="button" [attr.data-bs-target]="'#collapse' + episode.id" data-bs-toggle="collapse"  aria-expanded="true" [attr.aria-controls]="'#collapse' + episode.id">
+            Personagens
+          </button>
+        </div>
+      </h2>
+        <div class="bodyAcordion">
+          <div class="accordion-collapse collapse" [attr.id]="'collapse' + episode.id" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div *ngFor="let character of episode.characters"class="accordion-body">
+              <p>{{character}}</p>
+            </div>
+          </div>
+        </div>
+      <ng-content select=".bodyAcordion"></ng-content>
+    </div>
+  </div>
